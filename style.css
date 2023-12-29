@@ -12,6 +12,36 @@ h1{
         width:100%;
 
     }
+    h1 {
+      background-color: black;
+      color: white;
+      padding: 10px; /* Ajusta el relleno según sea necesario */
+      font-size: 30px;
+      font-weight: bold;
+      margin: 20px auto; /* Auto en el margen horizontal centrará el título */
+      font-family: none;
+      font-size: xxx-large;
+      text-align: center;
+  }
+  .filtros{
+    text-align: right;
+  }
+  
+  
+
+    footer.footer {
+      background-color: black;
+      color: white;
+      padding: 10px; 
+  }
+
+  .paginado {
+    text-align: center; /* Centra los elementos dentro del paginado */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+
+
 .total{
         display:grid;
         grid-template-columns: 0.9fr auto;
