@@ -27,12 +27,13 @@ h1{
     text-align: right;
   }
   
-  
-
     footer.footer {
       background-color: black;
       color: white;
       padding: 10px; 
+  }
+  .footer{
+    font-family: sans-serif;
   }
 
   .paginado {
@@ -87,7 +88,7 @@ h1{
          
         }
 
-     /* //AGREGADO/   //*AGREGADO/   /*AGREGADO// */
+
     
       .personaje:hover {
             transform: scale(1.05);
@@ -129,7 +130,7 @@ h1{
     }
     
 
-           /* /AGREGADO// */
+       
           .total2{
             margin-bottom:30px;
             margin-top:100px;
