@@ -27,12 +27,12 @@ function mostrarEnElHtml(arrayPersonajes){
     arrayPersonajes.forEach((itemPersonaje) => {
         // al div lo concateno con los personajes que quiero mostrar
         divPersonajes.innerHTML+=  ` <div class= "personaje">
-                                          <h3>Nombre: ${itemPersonaje.name}</h3>
-                                          <p>Genero ${itemPersonaje.gender}</p>
-                                          <p>Especie ${itemPersonaje.species}</p>
-                                          <p>Estado ${itemPersonaje.status}</p>
-                                          <p>Origen ${itemPersonaje.origin}</p>
-                                          <p>Locacion ${itemPersonaje.location}</p>
+                                          <p>Nombre: ${itemPersonaje.name}</p>
+                                          <p>Genero: ${itemPersonaje.gender}</p>
+                                          <p>Especie: ${itemPersonaje.species}</p>
+                                          <p>Estado: ${itemPersonaje.status}</p>
+                                          <p>Origen: ${itemPersonaje.origin.name}</p>
+                                          <p>Locacion: ${itemPersonaje.location.name}</p>
                                           <img src=${itemPersonaje.image} >
                                      </div>`
       })
