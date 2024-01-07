@@ -11,10 +11,8 @@ let botonPrimeraPagina =document.getElementById('primeraPagina');
 let botonAnteriorPagina = document.getElementById('anterior');
 let botonSiguientePagina = document.getElementById('siguiente');
 let botonUltimaPagina = document.getElementById('ultimaPagina');
-
-
-
-
+    // cantidad de personajes
+let spanCantidadPersonajes = document.getElementById('cantidadpersonajes');  
 
 let totalPersonajes;
 let paginaActual=1;
@@ -22,6 +20,11 @@ let paginaActual=1;
 // funcion para mostrar los personajes en el HTML
 
 function mostrarEnElHtml(arrayPersonajes){
+    //mostrar el total d personajes
+    //cuanta la cantidad de elementos del arrayPersonajes
+    let numeroPersonaje = arrayPersonajes.length;
+    //se agrega al span
+    spanCantidadPersonajes.innerText = numeroPersonaje;
     //vacio lo que habia en el div antes
     divPersonajes.innerHTML='';
     arrayPersonajes.forEach((itemPersonaje) => {
@@ -167,3 +170,4 @@ botonSiguientePagina.addEventListener('click',siguientePagina);
 botonAnteriorPagina.addEventListener('click',anteriorPagina);
 botonPrimeraPagina.addEventListener('click',primeraPagina);
 botonUltimaPagina.addEventListener('click',ultimaPagina);
+

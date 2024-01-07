@@ -1,14 +1,13 @@
 .personaje {
-    border: 2px solid none;
+    border: 2px solid #fbc2f8ba;
     margin: 5%;
     padding: 10px;
-    
-}
-
-.personaje {
-  position: relative;
-  overflow: hidden;
-  transition: filter 0.5s; /* Agrega una transición suave */
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.5s;
+    background-color: rgb(254, 89, 165);
+    box-shadow: 4px 3px 11px 4px rgb(254, 89, 165);
+   
 }
 
 .personaje img {
@@ -18,7 +17,19 @@
 }
 
 .personaje:hover {
-  filter: grayscale(100%); /* Aplica el filtro de escala de grises al pasar el ratón */
+  filter: grayscale(100%); 
+}
+
+body{
+  padding: 10px;
+  background-color:rgb(254, 191, 219);
+}
+ 
+.cantidadpersonajes {
+    background-color: rgb(254, 89, 165);
+    padding: 10px;
+
+
 }
 
 
@@ -41,10 +52,10 @@ h1{
     h1 {
       background-color: black;
       color: white;
-      padding: 10px; /* Ajusta el relleno según sea necesario */
+      padding: 10px; 
       font-size: 30px;
       font-weight: bold;
-      margin: 20px auto; /* Auto en el margen horizontal centrará el título */
+      margin: 20px auto; /* centrará el título */
       font-family: none;
       font-size: xxx-large;
       text-align: center;
@@ -64,14 +75,14 @@ h1{
   }
 
   .paginado {
-    text-align: center; /* Centra los elementos dentro del paginado */
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    text-align: center; 
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
 
-.total{
+/*.total{
         display:grid;
         grid-template-columns: 0.9fr auto;
         align-items: center;
@@ -83,26 +94,21 @@ h1{
         }
         /* CSS BOTON */
         button{
-          background-color: #fbc2f8;
+          background-color: rgb(254, 89, 165);
+          border: 2px solid #fbc2f8ba;
           border-radius: 100px;
-          box-shadow: rgba(224, 52, 210, 0.2) 0 -25px 18px -14px inset,rgba(224, 52, 210, 0.2) 0 1px 2px,rgba(224, 52, 210, 0.2) 0 2px 4px,rgba(224, 52, 210, 0.2) 0 4px 8px,rgba(224, 52, 210, 0.2) 0 8px 16px,rgba(224, 52, 210, 0.2) 0 16px 32px;
-          color: rgb(131, 6, 131);
-          cursor: pointer;
-          display: inline-block;
-          padding: 7px 20px;
           text-align: center;
+          padding: 7px 20px;
+          display: inline-block;
+          cursor: pointer;
           text-decoration: none;
-          transition: all 250ms;
           border: 0;
           font-size: 16px;
           user-select: none;
-          -webkit-user-select: none;
-          touch-action: manipulation;
-        } 
-        .filtroTodo:hover, .filtroMujer:hover, .filtroHombre:hover {
-          box-shadow: rgba(182, 44, 187, 0.35) 0 -25px 18px -14px inset,rgba(187, 44, 175, 0.25) 0 1px 2px,rgba(175, 44, 187, 0.25) 0 2px 4px,rgba(163, 44, 187, 0.25) 0 4px 8px,rgba(187, 44, 163, 0.25) 0 8px 16px,rgba(182, 44, 187, 0.25) 0 16px 32px;
-          transform: scale(1.05) rotate(-1deg);
+          box-shadow: rgb(254, 89, 165);
         }
+
+
         .person{
             margin-top:100px;
             
