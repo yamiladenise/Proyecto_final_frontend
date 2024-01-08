@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .personaje {
     border: 2px solid #fbc2f8ba;
     margin: 5%;
@@ -15,28 +21,32 @@
   height: auto;
   display: block;
 }
-
+/*esto es nuevo*/
 .personaje:hover {
-  filter: grayscale(100%); 
+  filter: grayscale(100%);
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+}
+
+.cantidadpersonajes {
+    background-color: rgb(254, 89, 165);
+    padding: 10px;
+}
+/*esto es nuevo*/
+#personajes {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  align-items: center;
 }
 
 body{
   padding: 10px;
   background-color:rgb(254, 191, 219);
-}
- 
-.cantidadpersonajes {
-    background-color: rgb(254, 89, 165);
-    padding: 10px;
-
-
-}
-
-
-*{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 10;
 }
 
 
@@ -68,6 +78,7 @@ h1{
       background-color: black;
       color: white;
       padding: 10px; 
+     
   }
   .footer{
     font-family: sans-serif;
@@ -112,20 +123,12 @@ h1{
           box-shadow:3px 3px 10px 0px rgb(254, 89, 165)
         } */
 
-
+/*
         .person{
             margin-top:100px;
             
-        }
-        #personajes {
-            display:grid;
-            padding: 10px;
-            grid-template-columns: repeat(4, 1fr);
-          grid-gap:30px;
-         align-items: center;
-         
-        }
-
+        }*/
+        
 
     
       .personaje:hover {
