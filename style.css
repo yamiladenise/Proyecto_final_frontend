@@ -5,6 +5,7 @@
 }
 
 .personaje {
+  align-self:stretch;
     border: 2px solid #fbc2f8ba;
     margin: 5%;
     padding: 10px;
